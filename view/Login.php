@@ -16,7 +16,7 @@ if (filter_input(INPUT_POST, "btnLogin", FILTER_SANITIZE_STRING)) {
     $aluno = new Aluno();
     $professor = new Professor();
     
-     if ($senha === "adm$673adm" && $nomeUsuario === "user#globaluser") {
+     if ($senha === "adm672*adm" && $nomeUsuario === "user*&user$") {
         session_start();
         $_SESSION['nomeUsuario'] = "%global%adm";
         $_SESSION['adm'] = 1;
