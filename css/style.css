@@ -1,0 +1,473 @@
+/*site ábaco*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    
+    box-sizing: border-box;
+}
+html
+{
+
+  overflow-x: hidden;
+  
+}
+
+body{
+   background:  #fffefa;
+   
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+
+#bs-example-navbar-collapse-1 ul{
+    margin-left: 105px;
+}
+
+.instrucoes, .instrucoesMultip{
+   margin: 0px 0px 20px 150px;
+   color: white;
+   font-size: 13px;
+   height: 78px;
+   background: tomato;
+   border-radius: 5px;
+   font-weight: bold;
+   box-shadow: 2px 2px 2px #606060;
+   padding: 10px;
+}
+
+.btnColetar{
+    position: absolute;
+    z-index: 999;
+    padding: 4px;
+    background-color: mediumaquamarine;
+    left: 390px;
+    top: 113px;
+    display: none;
+  
+}
+
+.unidades{
+    margin-right: 240px;
+}
+
+.dezenas, .centenas{
+    margin-right: 182px;
+}
+
+.centenas, .dezenas, .unidades{
+    height: 620px;
+    width: 40px;
+    float: right;
+    margin-top: 14px;
+    position: relative;
+}
+
+.secaoLeft .abaco{
+    background: url('../img/abaco.jpg') center top no-repeat;
+    background-size: 60%;
+    width: 970px;
+
+    height: 400px;
+    margin: 0 20px;
+    position: relative;
+    text-align: right;
+    
+}
+
+.abaco .txtResultado{
+    
+    width: 670px;
+    font-size: 27px;
+    letter-spacing: 7.65em;
+    position: absolute;
+    left: 25.5%;
+    top: 100%;
+   
+}
+
+.abaco button{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.unidades #unidades10{position:absolute; top: 0%; left: 0%;}
+.unidades #unidades9{position: absolute; top: 4%; left: 0%;}
+.unidades #unidades8{position: absolute; top: 8%; left: 0%;}
+.unidades #unidades7{position: absolute; top: 12%; left: 0%;}
+.unidades #unidades6{position: absolute; top: 16%; left: 0%;}
+.unidades #unidades5{position: absolute; top: 20%; left: 0%;}
+.unidades #unidades4{position: absolute; top: 24%; left: 0%;}
+.unidades #unidades3{position: absolute; top: 28%; left: 0%;}
+.unidades #unidades2{position: absolute; top: 32%; left: 0%;}
+.unidades #unidades1{position: absolute; top: 36%; left: 0%;}
+
+.dezenas #dezenas20{position: absolute; top: 0%; left: 0%;}
+.dezenas #dezenas19{position: absolute; top: 4%; left: 0%;}
+.dezenas #dezenas18{position: absolute; top: 8%; left: 0%;}
+.dezenas #dezenas17{position: absolute; top: 12%; left: 0%;}
+.dezenas #dezenas16{position: absolute; top: 16%; left: 0%;}
+.dezenas #dezenas15{position: absolute; top: 20%; left: 0%;}
+.dezenas #dezenas14{position: absolute; top: 24%; left: 0%;}
+.dezenas #dezenas13{position: absolute; top: 28%; left: 0%;}
+.dezenas #dezenas12{position: absolute; top: 32%; left: 0%;}
+.dezenas #dezenas11{position: absolute; top: 36%; left: 0%;}
+
+.centenas #centenas30{position: absolute; top: 0%; left: 0%;}
+.centenas #centenas29{position: absolute; top: 4%; left: 0%;}
+.centenas #centenas28{position: absolute; top: 8%; left: 0%;}
+.centenas #centenas27{position: absolute; top: 12%; left: 0%;}
+.centenas #centenas26{position: absolute; top: 16%; left: 0%;}
+.centenas #centenas25{position: absolute; top: 20%; left: 0%;}
+.centenas #centenas24{position: absolute; top: 24%; left: 0%;}
+.centenas #centenas23{position: absolute; top: 28%; left: 0%;}
+.centenas #centenas22{position: absolute; top: 32%; left: 0%;}
+.centenas #centenas21{position: absolute; top: 36%; left: 0%;}
+
+
+.unidades button{
+    background-color: red;
+}
+
+.dezenas button{
+    background-color: yellow;
+}
+
+.centenas button{
+    background-color: green;
+}
+
+.secaoRight{
+    margin-top: 120px;
+    
+}
+
+.conta{
+    padding: 10px;
+    margin-bottom: 190px;
+    margin-right: 8px;
+}
+
+
+.conta input[type="text"]{
+    width: 60px;
+    height: 35px;
+    padding: 6px;
+    font-size: 16px;
+    float: left;
+}
+
+
+.conta .btnAdicao, .conta .btnSubtracao{
+    width: 20px;
+    height: 20px;
+}
+
+/* "container" botões */
+.conta .botoes{
+    width: 20px;
+    height: 100%;
+    float: left;
+    margin: -3px 10px 0 10px;
+}
+
+.conta .calcular{
+    clear: both;
+    padding: 3px;
+    font-size: 13px;
+    margin-left: 48px;
+    margin-top: 6px;
+}
+
+.conta .apagarCampos{
+    padding: 3px;
+    font-size: 13px;
+    margin-left: 27px;
+    margin-top: 6px;
+}
+
+.pontuacao, .pontuacaoMultip{
+    font-size: 20px;
+
+}
+
+.bordaAzul{
+    border: 3px solid #008;
+}
+
+.spPont{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.dvFrmLogin{
+   padding: 20px;
+   background-color: lightgray;
+   border-radius: 10%;
+   margin-top: 18px;
+   margin-bottom: 46px;
+}
+
+.dvFrmLogin h1{
+   font-size: 18px;  
+}
+
+.dvFrmLogin h2{
+   font-size: 16px;  
+}
+
+.frmLogin input:not(.btnSubmit){
+    width: 300px;
+    height: 30px;
+    padding: 6px;
+}
+
+.tituloCad{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+}
+
+.frmCadUsu{
+    padding-top: 10px;
+}
+
+.btnCadUsuario{
+    margin-top: 15px;
+}
+
+
+.tabelaRanking{
+    margin-top: 27px;
+}
+
+.tabelaRanking td, th{
+    text-align: center;
+}
+
+.lblEscolaRank{
+   margin-left: 12px; 
+}
+
+#txtEscolaRank{
+    padding: 5px;
+    width: 200px;
+    height: 30px;
+}
+
+.btnMinhaPosicao{
+    margin-right: 15px;
+}
+
+.dvPerfil{
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 10%;
+    height: 490px;
+    width: 395px;
+    margin-bottom: 15px;
+}
+
+.dvPerfil h1{
+    border-bottom: 1px solid black;
+    padding-bottom: 3px;
+    
+}
+
+.dvPerfil form{
+    margin-top: 25px;
+}
+
+.dvPerfil input[type='text']{
+    width: 350px;
+    height: 35px;
+    padding: 6px;
+    
+}
+
+#slEscola{
+    padding: 4px;
+}
+
+.dvRanking h1{
+   margin-top: -10px;
+  }
+  
+  .bordaRanking{
+      border: 3px solid #006666;
+  }
+  
+  .listaPontuacao{
+      list-style-type: square;
+      margin-top: 20px;
+      font-size: 16px;
+  }
+  
+  .dvFuncionamento{
+      padding: 12px;
+      font-size: 16px;
+      
+  }
+  
+  .dvFuncionamento img{
+      margin: 10px 146px;
+  }
+
+ .dvFuncionamento iframe{
+      margin-top: 13px;
+  }
+  
+  
+  
+  .spEnunciado{
+      font-size: 16px;
+  }
+  
+  .spQuestao{
+      font-size: 16px;
+  }
+  
+  .frmQuiz input[type='text']{
+      font-size: 15px;
+      margin-left: 12px;
+      margin-bottom: 12px;
+      width: 200px;
+      height: 30px;
+      padding: 6px;
+  }
+  
+  .pontuacao, .spPont{
+     margin-top: -26px;
+  }
+  
+  .spPont{
+     margin-top: 1px; 
+  }
+  
+  .instrucoesMultip{
+      width: 100%;
+      height: auto;
+      font-size: 17px;
+      margin: 10px 0 0 0;
+  }
+  
+  .contaMultip{
+      font-size: 23px;
+      font-weight: bold;
+      border: 2px solid black;
+      padding: 20px;
+      margin-top: 30px;
+  }
+  
+
+  
+  .contaMultip input{
+      width: 100%;
+      padding: 3px;
+      border: 0;
+      text-align: center;
+  }
+  
+  .contaMultip input:disabled{
+      background-color: #fffefa;
+  }
+  
+  .contaMultip .inputbolinha{
+      border: 1px solid black;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      margin-left: -7px;
+  }
+  
+  
+  .pontuacaoMultip{
+      margin-top: 10px;
+      width: 60%;
+  }
+ 
+  .sinalVezes, .sinalMais{
+      margin-top: -12px;
+  }
+  
+  .linha3{
+      border-bottom: 2px solid #aaa;
+  }
+  
+   .linha5{
+      border-bottom: 2px solid #aaa;
+    
+  }
+  
+  .imgTabuada{
+      width: 480px;
+      height: 520px;
+      border: 5px solid green;
+      padding: 4px;
+  }
+  
+  .btnGerarMultip{
+      margin-top: 23px;
+      font-size: 17px;
+  }
+  
+  .preencher{
+      padding: 6px;
+      border: 1px solid black;
+      text-align: center;
+  }
+  
+  .letraAzul{
+      color: blue;
+  }
+  
+  .bordaVermelha{
+      border: 3px solid red;
+  }
+  
+   .bordaVerde{
+      border: 3px solid green;
+  }
+  
+  .dvAddAluno h1{
+     margin-bottom: 50px;
+      
+  }
+  
+  .dvAddAluno input[type="text"]{
+      padding: 5px;
+      
+  }
+  
+  .dvAddAluno label{
+      font-size: 16px;
+      
+  }
+  
+  .dvTableAddAluno{
+      margin-top: 35px;
+  }
+  
+  .panel-footer{
+      margin-top: 20px;
+  }
+  
+  .tituloAdm{
+      font-weight: 900;
+  }
+  
+  #txtEmail{
+      padding: 7px;
+  }
+  
+  .tabelaQuiz tbody{
+      font-size: 15.5px;
+  }
