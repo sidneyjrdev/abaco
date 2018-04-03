@@ -471,3 +471,11 @@ a:hover{
   .tabelaQuiz tbody{
       font-size: 15.5px;
   }
+  
+  /* lg + */
+@media (min-width: 1200px) {
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
