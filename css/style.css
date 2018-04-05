@@ -472,9 +472,12 @@ a:hover{
   }
   
   .dvConteudo{
-      width: 1367px;
       margin: 0 auto;
   }
   
-  
+  @media (min-width: 1368px){
+      .dvConteudo{
+        width: 1367px;
+      }
+  }
   
