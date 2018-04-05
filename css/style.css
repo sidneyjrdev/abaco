@@ -15,8 +15,7 @@ html
 }
 
 body{
-   background:  #fffefa;
-   
+    background:  #fffefa;
 }
 
 a{
@@ -472,10 +471,10 @@ a:hover{
       font-size: 15.5px;
   }
   
-  /* lg + */
-@media (min-width: 1200px) {
-    .container{
-        width: 80%;
-        margin: 0 auto;
-    }
-}
+  .dvConteudo{
+      width: 1367px;
+      margin: 0 auto;
+  }
+  
+  
+  

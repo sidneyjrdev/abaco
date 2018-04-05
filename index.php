@@ -26,7 +26,7 @@ session_start();
         
     </head>
     <body>
-        
+          
         <?php if(isset($_SESSION['nomeProfessor']) && @$_GET['pagina'] != "login"){ ?>
 <!-- cabeçalho -->
 
@@ -136,14 +136,14 @@ session_start();
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-            
+            <div class="dvConteudo">
             <?php }
-            
+              
               //inclusao da página
               require("util/incluirCaminho.php");
            
             ?>
-
+            </div>
             <!-- rodapé -->
 
             <footer class="panel-footer text-center">
@@ -151,6 +151,6 @@ session_start();
 
 
             </footer>
- 
+
     </body>
 </html>
